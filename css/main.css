@@ -13,103 +13,78 @@ html {
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1.6rem;
-  background-color: #222222;
-  color: #f3efe0;
 }
 
-.wrapper {
-  margin: 0 5em;
-  width: 100%;
-  max-width: 1200px;
+.navbar {
+  font-size: 4rem;
 }
-
-.nav .nav__box {
-  position: fixed;
-  padding: 10px 0;
-  width: 100%;
-  height: 70px;
-  background-color: #434242;
-  z-index: 1000;
-}
-.nav .nav__box-items {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 1200px;
-}
-.nav .nav__box-items--logo {
-  width: 100px;
-  height: 50px;
+.navbar .navbar-brand {
+  width: 10em;
+  height: 5em;
   border-radius: 8px;
   overflow: hidden;
 }
-.nav .nav__box-items--logo img {
+.navbar .navbar-brand img {
   width: 100%;
   height: 100%;
 }
-.nav .nav__box-item {
-  color: #f3efe0;
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.3s;
+.navbar .nav-link:hover {
+  background-color: #22a39f;
 }
-.nav .nav__box-item:hover {
-  color: #22a39f;
+.navbar .dropdown-item {
+  font-size: 3.5rem;
+  transition: background-color 0.3s;
+}
+.navbar .dropdown-item:hover {
+  background-color: #22a39f;
+}
+.navbar .navbar-toggler-icon {
+  padding: 2em;
 }
 
 .header {
-  height: 100vh;
-}
-.header__hero-img {
   position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/shows-img/show-hero1-mini.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-.header__hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
   text-align: center;
+  background-image: linear-gradient(45deg, rgba(35, 40, 45, 0.85), rgba(30, 35, 40, 0.85)), url("../img/shows-img/show-hero1-mini.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header__heading {
+  font-size: 7rem;
+  font-weight: 700;
   text-transform: uppercase;
-  z-index: 1;
 }
-.header__hero-text h1 {
-  font-size: 5rem;
+.header__text {
+  font-size: 3rem;
 }
-.header__hero-text .btn-aboutus {
-  margin-top: 3em;
-}
-.header__hero-text .btn-aboutus button {
-  padding: 20px;
-  border: none;
+.header__btn {
+  font-size: 2.5rem;
+  background-color: #6c757d;
+  text-decoration: none;
   border-radius: 8px;
-  font-size: 1.6rem;
-  background-color: #434242;
-  color: #f3efe0;
-  cursor: pointer;
   text-transform: uppercase;
-  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.header__hero-text .btn-aboutus button:hover {
+.header__btn:hover {
   background-color: #22a39f;
-  color: #222222;
 }
-.header__hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+
+@media (min-width: 768px) {
+  .navbar {
+    font-size: 3rem;
+  }
+  .navbar .navbar-brand {
+    width: 8em;
+    height: 4em;
+  }
+  .navbar .dropdown-item {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

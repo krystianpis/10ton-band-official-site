@@ -1,1 +1,8 @@
 @use './colors' as color;
+
+@mixin heroImg($bgImg) {
+	background-image: color.$hero-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
