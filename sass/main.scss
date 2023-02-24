@@ -3,11 +3,12 @@
 // NAVIGATION
 
 .navbar {
-	font-size: 4rem;
+	position: sticky;
+	font-size: 2rem;
 
 	.navbar-brand {
-		width: 10em;
-		height: 5em;
+		width: 8em;
+		height: 4em;
 		border-radius: 8px;
 		overflow: hidden;
 
@@ -24,7 +25,7 @@
 	}
 
 	.dropdown-item {
-		font-size: 3.5rem;
+		font-size: 2rem;
 		transition: background-color 0.3s;
 
 		&:hover {
@@ -34,7 +35,7 @@
 
 	.navbar-toggler {
 		&-icon {
-			padding: 2em;
+			padding: 1.5em;
 		}
 	}
 }
@@ -48,21 +49,22 @@
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
+	height: 100svh;
 	text-align: center;
 	@include heroImg('../img/shows-img/show-hero1-mini.jpg');
 
 	&__heading {
-		font-size: 7rem;
+		font-size: 4rem;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 
 	&__text {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	&__btn {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 		background-color: $boot-secondary;
 		text-decoration: none;
 		border-radius: 8px;
@@ -76,9 +78,26 @@
 	}
 }
 
+// SECTION ABOUTUS
+
+.aboutus {
+	&__text {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	&__box {
+		&-img {
+			max-width: 100%;
+		}
+	}
+}
+
 // MEDIA QUERIES
 
 @media (min-width: 768px) {
+	// NAVIGATION
+
 	.navbar {
 		font-size: 3rem;
 
@@ -89,6 +108,63 @@
 
 		.dropdown-item {
 			font-size: 3rem;
+		}
+	}
+
+	// HEADER
+
+	.header {
+		&__heading {
+			font-size: 7rem;
+		}
+
+		&__text {
+			font-size: 3rem;
+		}
+
+		&__btn {
+			font-size: 2rem;
+		}
+	}
+
+	// SECTION ABOUTUS
+
+	.aboutus {
+		.section__heading {
+			font-size: 5rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&-img {
+				max-width: 80%;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	// HEADER
+
+	.header {
+		background-image: $hero-gradient, url('../img/shows-img/show-hero1-big.jpg');
+
+		&__heading {
+			font-size: 8rem;
+		}
+
+		&__text {
+			font-size: 4rem;
+		}
+
+		&__btn {
+			font-size: 2.5rem;
 		}
 	}
 }

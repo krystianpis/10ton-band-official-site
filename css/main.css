@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -15,12 +16,21 @@ body {
   font-size: 1.6rem;
 }
 
+.section__heading {
+  margin-top: 60px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .navbar {
-  font-size: 4rem;
+  position: sticky;
+  font-size: 2rem;
 }
 .navbar .navbar-brand {
-  width: 10em;
-  height: 5em;
+  width: 8em;
+  height: 4em;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -32,14 +42,14 @@ body {
   background-color: #22a39f;
 }
 .navbar .dropdown-item {
-  font-size: 3.5rem;
+  font-size: 2rem;
   transition: background-color 0.3s;
 }
 .navbar .dropdown-item:hover {
   background-color: #22a39f;
 }
 .navbar .navbar-toggler-icon {
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .header {
@@ -49,6 +59,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  height: 100svh;
   text-align: center;
   background-image: linear-gradient(45deg, rgba(35, 40, 45, 0.85), rgba(30, 35, 40, 0.85)), url("../img/shows-img/show-hero1-mini.jpg");
   background-size: cover;
@@ -56,15 +67,15 @@ body {
   background-attachment: fixed;
 }
 .header__heading {
-  font-size: 7rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 .header__text {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .header__btn {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   background-color: #6c757d;
   text-decoration: none;
   border-radius: 8px;
@@ -74,6 +85,14 @@ body {
 }
 .header__btn:hover {
   background-color: #22a39f;
+}
+
+.aboutus__text {
+  font-size: 2rem;
+  text-align: center;
+}
+.aboutus__box-img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -86,5 +105,42 @@ body {
   }
   .navbar .dropdown-item {
     font-size: 3rem;
+  }
+  .header__heading {
+    font-size: 7rem;
+  }
+  .header__text {
+    font-size: 3rem;
+  }
+  .header__btn {
+    font-size: 2rem;
+  }
+  .aboutus .section__heading {
+    font-size: 5rem;
+  }
+  .aboutus__text {
+    font-size: 2rem;
+  }
+  .aboutus__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus__box-img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: linear-gradient(45deg, rgba(35, 40, 45, 0.85), rgba(30, 35, 40, 0.85)), url("../img/shows-img/show-hero1-big.jpg");
+  }
+  .header__heading {
+    font-size: 8rem;
+  }
+  .header__text {
+    font-size: 4rem;
+  }
+  .header__btn {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
