@@ -1,7 +1,14 @@
 .section__heading {
-	margin-top: 60px;
+	margin-top: 1em;
+	padding: 1em;
 	font-size: 3rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.section__heading {
+		font-size: 5rem;
+	}
 }
