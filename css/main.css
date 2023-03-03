@@ -121,13 +121,21 @@ body {
   background-color: #434242;
   border: none;
 }
-.members .card h5 {
+.members .card h3 {
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 .members .card-text {
   font-size: 1.7rem;
+}
+
+.gallery__box-img {
+  aspect-ratio: 16/9;
+  transition: transform 0.3s;
+}
+.gallery__box-img:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
@@ -165,7 +173,7 @@ body {
   .aboutus__box-img {
     max-width: 80%;
   }
-  .members .card h5 {
+  .members .card h3 {
     font-size: 3rem;
   }
   .members .card-text {
