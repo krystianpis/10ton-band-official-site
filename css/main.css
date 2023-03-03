@@ -138,6 +138,10 @@ body {
   transform: scale(1.05);
 }
 
+.contact {
+  background-color: #434242;
+}
+
 @media (min-width: 768px) {
   .navbar {
     font-size: 3rem;
