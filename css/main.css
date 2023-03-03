@@ -142,6 +142,22 @@ body {
 .contact {
   background-color: #434242;
 }
+.contact .form-label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact__btn button {
+  background-color: #6c757d;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.contact__btn button:hover {
+  background-color: #22a39f;
+}
 
 @media (min-width: 768px) {
   .navbar {

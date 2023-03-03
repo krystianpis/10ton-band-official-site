@@ -146,6 +146,27 @@
 
 .contact {
 	background-color: $alter-main-color;
+
+	.form-label {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		button {
+			background-color: $boot-secondary;
+			border: none;
+			border-radius: 8px;
+			font-weight: 700;
+			text-transform: uppercase;
+			transition: background-color 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $special-color;
+			}
+		}
+	}
 }
 
 // MEDIA QUERIES
