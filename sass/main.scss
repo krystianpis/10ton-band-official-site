@@ -20,6 +20,9 @@
 
 	.nav-link {
 		border-radius: 8px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
 
 		&:hover {
 			background-color: $special-color;
@@ -120,6 +123,7 @@
 			font-size: 2.2rem;
 			font-weight: 700;
 			text-transform: uppercase;
+			letter-spacing: 2px;
 		}
 
 		&-text {

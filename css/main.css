@@ -24,6 +24,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 3px;
 }
 
 @media (min-width: 768px) {
@@ -47,6 +48,9 @@ body {
 }
 .navbar .nav-link {
   border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .navbar .nav-link:hover {
   background-color: #22a39f;
@@ -127,6 +131,7 @@ body {
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .members .card-text {
   font-size: 1.7rem;
