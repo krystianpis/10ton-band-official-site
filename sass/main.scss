@@ -78,6 +78,7 @@
 	&__btn {
 		padding: 0.5em;
 		font-size: 1.5rem;
+		font-weight: 700;
 		background-color: $boot-secondary;
 		text-decoration: none;
 		border-radius: 8px;
@@ -167,6 +168,37 @@
 			}
 		}
 	}
+
+	&__socials {
+		h3 {
+			font-size: 2rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.fa-brands {
+			font-size: 3rem;
+		}
+	}
+}
+
+// FOOTER
+
+.footer {
+	background-color: $alter-main-color;
+
+	hr {
+		height: 3px;
+	}
+
+	&__text {
+		padding: 2em;
+		text-align: center;
+
+		&-link {
+			text-decoration: none;
+		}
+	}
 }
 
 // MEDIA QUERIES
@@ -234,6 +266,19 @@
 
 			&-text {
 				font-size: 2.5rem;
+			}
+		}
+	}
+
+	// SECTION CONTACT
+	.contact {
+		&__socials {
+			h3 {
+				font-size: 2.5rem;
+			}
+
+			.fa-brands {
+				font-size: 3.5rem;
 			}
 		}
 	}

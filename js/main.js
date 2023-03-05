@@ -5,3 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	allNavItems.forEach(item => item.addEventListener('click', () => navList.classList.remove('show')))
 })
+
+const footerYear = document.querySelector('.footer__year')
+
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+handleCurrentYear()

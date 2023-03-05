@@ -96,6 +96,7 @@ body {
 .header__btn {
   padding: 0.5em;
   font-size: 1.5rem;
+  font-weight: 700;
   background-color: #6c757d;
   text-decoration: none;
   border-radius: 8px;
@@ -158,6 +159,28 @@ body {
 .contact__btn button:hover {
   background-color: #22a39f;
 }
+.contact__socials h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact__socials .fa-brands {
+  font-size: 3rem;
+}
+
+.footer {
+  background-color: #434242;
+}
+.footer hr {
+  height: 3px;
+}
+.footer__text {
+  padding: 2em;
+  text-align: center;
+}
+.footer__text-link {
+  text-decoration: none;
+}
 
 @media (min-width: 768px) {
   .navbar {
@@ -199,6 +222,12 @@ body {
   }
   .members .card-text {
     font-size: 2.5rem;
+  }
+  .contact__socials h3 {
+    font-size: 2.5rem;
+  }
+  .contact__socials .fa-brands {
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 992px) {
