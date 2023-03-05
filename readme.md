@@ -23,9 +23,9 @@ Created site using:
 
 - [x] create base site look
 - [x] add live version on GitHub Pages for preview/testing
-- [] add real photos
-- [] add real descritpions in About Us section etc.
-- [] host on custom domain/paid server
+- [ ] add real photos
+- [ ] add real descritpions in About Us section etc.
+- [ ] host on custom domain/paid server
 
 ## 4. Media
 
